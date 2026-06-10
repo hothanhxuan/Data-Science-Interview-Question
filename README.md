@@ -1,20 +1,19 @@
 # SQL & DB Interview Questions & Answers for Data Scientists # 
 
-## Questions ##
-* [Q1: What are joins in SQL and discuss its types?](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20%26%20DB%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q1-what-are-joins-in-sql-and-discuss-its-types)
-* [Q2: Define the primary, foreign, and unique keys and the differences between them?](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20%26%20DB%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q2-define-the-primary-foreign-and-unique-keys-and-the-differences-between-them)
-* [Q3: What is the difference between BETWEEN and IN operators in SQL?](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20%26%20DB%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q3-what-is-the-difference-between-between-and-in-operators-in-sql)
-* [Q4: Assume you have the given table below which contains information on user logins. Write a query to obtain the number of reactivated users (Users who did not log in the previous month and then logged in the current month)](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20%26%20DB%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q4-assume-you-have-the-given-table-below-which-contains-information-on-user-logins-write-a-query-to-obtain-the-number-of-reactivated-users-users-who-did-not-log-in-the-previous-month-and-then-logged-in-the-current-month)
-![Alt_text](https://github.com/youssefHosni/Data-Science-Interview-Questions/blob/main/Figures/Screenshot%202022-07-31%20201033.png)
-* [Q5: Describe the advantages and disadvantages of relational database vs NoSQL databases](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20%26%20DB%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q5-describe-the-advantages-and-disadvantages-of-relational-database-vs-nosql-databases)
-* [Q6: Assume you are given the table below on user transactions. Write a query to obtain the third transaction of every user](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20%26%20DB%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q6-assume-you-are-given-the-table-below-on-user-transactions-write-a-query-to-obtain-the-third-transaction-of-every-user)
-![1661352126442](https://user-images.githubusercontent.com/72076328/186479577-da475779-b4de-45ef-b1ec-79ca5df0dad5.png)
-* [Q7: What do you understand by Self Join? Explain using an example](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20%26%20DB%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q7-what-do-you-understand-by-self-join-explain-using-an-example)
-* [Q8: Write an SQL query to join 3 tables](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20%26%20DB%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q8-write-an-sql-query-to-join-3-tables)
-* [Q9: Write a SQL query to get the third-highest salary of an employee from employee_table and arrange them in descending order.](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20%26%20DB%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q9-write-a-sql-query-to-get-the-third-highest-salary-of-an-employee-from-employee_table-and-arrange-them-in-descending-order)
-* [Q10: What is the difference between temporary tables and common table expressions?](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20&%20DB%20Interview%20Questions%20&%20Answers%20for%20Data%20Scientists.md#q10-what-is-the-difference-between-temporary-tables-and-common-table-expressions)
-* [Q11: Why use Right Join When Left Join can suffice the requirement?](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20&%20DB%20Interview%20Questions%20&%20Answers%20for%20Data%20Scientists.md#q11-why-use-right-join-when-left-join-can-suffice-the-requirement)
-* [Q12: Why Rank skips sequence?](https://github.com/hothanhxuan/Data-Science-Interview-Question/blob/main/SQL%20&%20DB%20Interview%20Questions%20&%20Answers%20for%20Data%20Scientists.md#q12-why-rank-skips-sequence)
+## Questions
+
+- [Q1: What are joins in SQL and discuss its types?](#q1-what-are-joins-in-sql-and-discuss-its-types)
+- [Q2: Define the primary, foreign, and unique keys and the differences between them?](#q2-define-the-primary-foreign-and-unique-keys-and-the-differences-between-them)
+- [Q3: What is the difference between BETWEEN and IN operators in SQL?](#q3-what-is-the-difference-between-between-and-in-operators-in-sql)
+- [Q4: Reactivated users SQL query problem](#q4-assume-you-have-the-given-table-below-which-contains-information-on-user-logins-write-a-query-to-obtain-the-number-of-reactivated-users-users-who-did-not-log-in-the-previous-month-and-then-logged-in-the-current-month)
+- [Q5: Advantages and disadvantages of relational database vs NoSQL databases](#q5-describe-the-advantages-and-disadvantages-of-relational-database-vs-nosql-databases)
+- [Q6: Third transaction of every user](#q6-assume-you-are-given-the-table-below-on-user-transactions-write-a-query-to-obtain-the-third-transaction-of-every-user)
+- [Q7: What is a Self Join?](#q7-what-do-you-understand-by-self-join-explain-using-an-example)
+- [Q8: Write an SQL query to join 3 tables](#q8-write-an-sql-query-to-join-3-tables)
+- [Q9: Third highest salary query](#q9-write-a-sql-query-to-get-the-third-highest-salary-of-an-employee-from-employee_table-and-arrange-them-in-descending-order)
+- [Q10: Temporary tables vs CTE](#q10-what-is-the-difference-between-temporary-tables-and-common-table-expressions)
+- [Q11: Why use RIGHT JOIN when LEFT JOIN can suffice?](#q11-why-use-right-join-when-left-join-can-suffice-the-requirement)
+- [Q12: Why does RANK skip sequence?](#q12-why-rank-skips-sequence)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Questions & Answers ##
